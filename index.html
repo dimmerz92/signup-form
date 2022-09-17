@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Signup Form</title>
+    <script src="script.js" defer></script>
+    <title>Signup Page</title>
 </head>
 <body>
-    <header>
-        <div class="banner">
-            <img src="/images/odin-lined.png" class="logo">
-            <h1 class="title">ODIN</h1>
-        </div>
-        <div class="spacer"></div>
-        <p class="citation">Photo by <a href="#">Halie West</a> on <a href="#">Upsplash</a></p>
-    </header>
-    <main>
+    <div class="left">
+        <header>
+            <img src="/images/odin-lined.png" alt="oding logo" class="logo">
+            <h1>ODIN</h1>
+        </header>
+        <div></div>
+        <p class="citation">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
+    </div>
+    <div class="right">
         <div class="top">
-            <p>This is not a real online service! You know you need something like
-                this in your life to help you realise your deepest dreams.<br>
+            <p>
+                This is not a real online service! You know you need something
+                like this in your life to help you realise your deepest dreams.<br>
                 Sign up <em>now</em> to get started.
             </p>
             <p>You <em>know</em> you want to.</p>
@@ -27,42 +29,38 @@
         <div class="middle">
             <p>Let's do this!</p>
             <form action="#" method="post" id="signup">
-                <section id="names">
-                    <div>
+                <ul>
+                    <li>
                         <label for="fName">FIRST NAME</label>
-                        <input type="text" name="fName" id="fName" placeholder="Thor">
-                    </div>
-                    <div>
+                        <input type="text" name="fName" id="fName" minlength="3" maxlength="25" placeholder="Thor">
+                    </li>
+                    <li>
                         <label for="lName">LAST NAME</label>
-                        <input type="text" name="lName" id="lName" placeholder="Odinson">
-                    </div>
-                </section>
-                <section id="contact-info">
-                    <div>
+                        <input type="text" name="lName" id="lName" minlength="3" maxlength="25" placeholder="Odinson">
+                    </li>
+                    <li>
                         <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email" placeholder="thor@valhalla.com">
-                    </div>
-                    <div>
-                        <label for="phone">PHONE NUMBER</label>
+                    </li>
+                    <li>
+                        <label for="phone">PHONE</label>
                         <input type="tel" name="phone" id="phone">
-                    </div>
-                </section>
-                <section id="password">
-                    <div>
+                    </li>
+                    <li>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                    <div>
-                        <label for="conf">CONFIRM PASSWORD</label>
-                        <input type="password" name="conf" id="conf">
-                    </div>
-                </section>
+                        <input type="password" name="password" id="password" required>
+                    </li>
+                    <li>
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm" id="confirm" required>
+                    </li>
+                </ul>
             </form>
         </div>
         <div class="bottom">
             <button type="submit" form="signup">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
-    </main>    
+    </div>
 </body>
 </html>
