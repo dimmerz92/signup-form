@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(/images/photo-1585202900225-6d3ac20a6962.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.logo {
+    max-height: 130px;
+    width: auto;
+}
+
+.title {
+    font-family: Norse-Bold;
+    font-size: 100px;
+    margin: 0;
+}
+
+.citation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.citation a {
+    color: white;
+}
+
+main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240,240,240);
+}
+
+main p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.top {
+    padding: 1rem 4rem;
+}
+
+.middle {
+    background-color: white;
+    box-shadow: 0 8px 5px lightgrey;
+    padding: 0 4rem 1rem;
+}
+
+form section {
+    display: flex;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 1px;
+    gap: 6rem;
+    margin: 1.5rem 0;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    font-size: 1.2rem;
+    border: 1px #e5e7eb solid;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+}
+
+input:focus {
+    border: 1px blue solid;
+    box-shadow: 5px 5px 2px lightgrey;
+}
+
+.bottom {
+    padding: 2rem 4rem
+}
+
+.bottom button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px lightgrey;
+    font-size: 1.2rem;
+    padding: 0.8rem 3rem;
+}
+
+.bottom button:active {
+    box-shadow: none;
+}
+
+.bottom p {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #596D48;
+}
